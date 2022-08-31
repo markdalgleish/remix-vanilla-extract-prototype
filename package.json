@@ -1,0 +1,38 @@
+{
+  "name": "remix-vanilla-extract-prototype",
+  "private": true,
+  "sideEffects": [
+    "*.css.ts"
+  ],
+  "scripts": {
+    "build": "pnpm run build:css && remix build",
+    "build:css": "tsup",
+    "dev": "concurrently \"pnpm run dev:css\" \"remix dev\"",
+    "dev:css": "tsup --watch",
+    "start": "remix-serve build"
+  },
+  "dependencies": {
+    "@dessert-box/react": "^0.4.0",
+    "@remix-run/node": "^1.7.0",
+    "@remix-run/react": "^1.7.0",
+    "@remix-run/serve": "^1.7.0",
+    "@vanilla-extract/css": "^1.7.3",
+    "@vanilla-extract/sprinkles": "^1.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.7.0",
+    "@remix-run/eslint-config": "^1.7.0",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vanilla-extract/esbuild-plugin": "^2.1.0",
+    "concurrently": "^7.3.0",
+    "eslint": "^8.20.0",
+    "tsup": "^6.2.3",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

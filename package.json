@@ -12,12 +12,12 @@
     "start": "remix-serve build"
   },
   "dependencies": {
-    "@dessert-box/react": "^0.4.0",
     "@remix-run/node": "^1.7.0",
     "@remix-run/react": "^1.7.0",
     "@remix-run/serve": "^1.7.0",
     "@vanilla-extract/css": "^1.7.3",
     "@vanilla-extract/sprinkles": "^1.4.1",
+    "clsx": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

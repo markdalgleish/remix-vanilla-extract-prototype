@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@dessert-box/react': ^0.4.0
   '@remix-run/dev': ^1.7.0
   '@remix-run/eslint-config': ^1.7.0
   '@remix-run/node': ^1.7.0
@@ -12,6 +11,7 @@ specifiers:
   '@vanilla-extract/css': ^1.7.3
   '@vanilla-extract/esbuild-plugin': ^2.1.0
   '@vanilla-extract/sprinkles': ^1.4.1
+  clsx: ^1.2.1
   concurrently: ^7.3.0
   eslint: ^8.20.0
   react: ^18.2.0
@@ -20,12 +20,12 @@ specifiers:
   typescript: ^4.7.4
 
 dependencies:
-  '@dessert-box/react': 0.4.0_react@18.2.0
   '@remix-run/node': 1.7.0_biqbaboplfbrettd7655fr4n2y
   '@remix-run/react': 1.7.0_biqbaboplfbrettd7655fr4n2y
   '@remix-run/serve': 1.7.0_biqbaboplfbrettd7655fr4n2y
   '@vanilla-extract/css': 1.7.3
   '@vanilla-extract/sprinkles': 1.4.1_@vanilla-extract+css@1.7.3
+  clsx: 1.2.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -1365,19 +1365,6 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@dessert-box/core/0.2.0:
-    resolution: {integrity: sha512-Vqaec6i0cvS1r54kU6CfOQECi6dPWzz6DVVxJABOxqPmVk8fOSy6pIKsK0YyPFGRpZK/FXkJ1YhURUOW1OxOVQ==}
-    dev: false
-
-  /@dessert-box/react/0.4.0_react@18.2.0:
-    resolution: {integrity: sha512-r2sqkX4y+fDLtRGGpCitI5ckzLZl3DPMUhKBstf3qoZbfoAVHB0HRHgrfRni3F0qZZgXowR880lL8IDpPpRiGg==}
-    peerDependencies:
-      react: '>=16.8.0'
-    dependencies:
-      '@dessert-box/core': 0.2.0
-      react: 18.2.0
-    dev: false
-
   /@emotion/hash/0.8.0:
     resolution: {integrity: sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==}
 
@@ -2694,6 +2681,11 @@ packages:
     resolution: {integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==}
     engines: {node: '>=0.8'}
     dev: true
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
 
   /collection-visit/1.0.0:
     resolution: {integrity: sha512-lNkKvzEeMBBjUGHZ+q6z9pSJla0KWAQPvtzhEV9+iGyQYG+pBpl7xKDhxoNSOZH2hhv0v5k0y2yAM4o4SjoSkw==}
